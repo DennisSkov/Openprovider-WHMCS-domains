@@ -24,11 +24,13 @@ $_LANG['dnssec']['tablebuttonactionsave']   = 'Save';
 
 $_LANG['dnssec']['buttonadddnssecrecord'] = 'Add A New DNSSEC Record';
 
-$_LANG['esIdentificationType'] = 'Identification Type';
-$_LANG['esIdentificationNumber'] = "Company or Individual ID";
-$_LANG['esIdentificationPassport'] = "Passport/Individual ID";
-$_LANG['esIdentificationCompany'] = "Company Registration ID";
-$_LANG['esIdentificationCORI'] = "Company or Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['IdentificationType'] = 'Identification Type';
+$_LANG['openprovider']['additionalFields']['es']['IdentificationNumber'] = "Company or Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['IdentificationPassport'] = "Passport/Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['IdentificationCompany'] = "Company Registration ID";
+$_LANG['openprovider']['additionalFields']['es']['IdentificationCORI'] = "Company or Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['DNI'] = 'DNI (If you are an individual)';
+$_LANG['openprovider']['additionalFields']['es']['CIF'] = 'CIF (If you are a company)';
 
 $_LANG['ptIdentificationType'] = 'Tipo de Contribuinte (VAT/TAX ID)';
 $_LANG['ptIdentificationNumber'] = 'Tipo de Contribuinte (VAT/TAX ID)';
