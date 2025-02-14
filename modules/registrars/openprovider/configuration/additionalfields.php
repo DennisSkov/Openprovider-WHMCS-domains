@@ -1,10 +1,15 @@
 <?php
+
+use  OpenProvider\WhmcsRegistrar\helpers\Language;
+
 /**
  * Configuration fields
  * OpenProvider Registrar module
  *
  * @copyright Copyright (c) Openprovider 2018
  */
+
+$_LANG = Language::load();
 
 // .US
 $additionaldomainfields[".us"][] = array(
@@ -21,7 +26,7 @@ $additionaldomainfields[".us"][] = array(
     "Name" => "Application Purpose",
     "LangVar" => "ustldapppurpose",
     "Type" => "dropdown",
-    "Options" => "P1 - Business use for profit,P2 - Non-profit business (club;  association; religious organization),P3 - Personal,P5 - Government purposes",
+    "Options" => "{$_LANG['openprovider']['additionalFields']['.us']['businessForProfit']},{$_LANG['openprovider']['additionalFields']['.us']['nonProfitBusiness']},{$_LANG['openprovider']['additionalFields']['.us']['personal']},{$_LANG['openprovider']['additionalFields']['.us']['government']}",
     "op_location" => "customerExtensionAdditionalData",
     "op_name" => "applicantPurpose",
     "op_explode" => ' -'
@@ -68,7 +73,7 @@ $additionaldomainfields[".jobs"][] = array(
     "Name" => "Industry Class",
     "LangVar" => "jobsIndustryClass",
     "Type" => "dropdown",
-    "Options" => "None,2,3,21,5,4,12,6,7,13,19,10,11,15,16,17,18,20,9,26,22,14,23,8,24,25",
+    "Options" => "{$_LANG['openprovider']['additionalFields']['.jobs']['none']},2,3,21,5,4,12,6,7,13,19,10,11,15,16,17,18,20,9,26,22,14,23,8,24,25",
     "Required" => true,
     "op_location" => "customerExtensionAdditionalData",
     "op_name" => "industryClass",
@@ -122,7 +127,7 @@ $additionaldomainfields[".aero"][] = array(
 // .PT
 $additionaldomainfields[".pt"][] = array(
     "Name" => "Tipo de Contribuinte (VAT/TAX ID)",
-    "LangVar" => "ptIdentificationType",
+    "LangVar" => "identificationType",
     "Options" => "vat|NIPC (empresa),socialSecurityNumber|NIF (particular)",
     "Type" => "dropdown",
     "op_dropdown_for_op_name" => "ptIdentificationNumber"
@@ -345,7 +350,7 @@ $additionaldomainfields[".no"] = $additionaldomainfields[".ro"];
 $additionaldomainfields[".es"][] = array(
     "Name" => "Tipo de identificación",
     "LangVar" => "esIdentificationType",
-    "Options" => "passportNumber|DNI (Si es un particular),companyRegistrationNumber|CIF (Si es una empresa)",
+    "Options" => "passportNumber|{$_LANG['openprovider']['additionalFields']['es']['DNI']},companyRegistrationNumber|{$_LANG['openprovider.additionalFields.es.CIF']}",
     "Type" => "dropdown",
     "op_dropdown_for_op_name" => "esIdentificationNumber"
 );
