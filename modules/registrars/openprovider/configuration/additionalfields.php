@@ -130,7 +130,7 @@ $additionaldomainfields[".pt"][] = array(
     "LangVar" => "identificationType",
     "Options" => "vat|NIPC (empresa),socialSecurityNumber|NIF (particular)",
     "Type" => "dropdown",
-    "op_dropdown_for_op_name" => "ptIdentificationNumber"
+    "op_dropdown_for_op_name" => "identificationNumber"
 );
 
 $additionaldomainfields['.pt'][] = array(
@@ -139,7 +139,7 @@ $additionaldomainfields['.pt'][] = array(
     "Size" => "30",
     "Required" => true,
     "op_location" => "customerAdditionalData",
-    "op_name"  => "ptIdentificationNumber" // Real name is defined by the op_dropdown_for_op_name.
+    "op_name"  => "identificationNumber" // Real name is defined by the op_dropdown_for_op_name.
 );
 
 // it
@@ -352,7 +352,7 @@ $additionaldomainfields[".es"][] = array(
     "LangVar" => "esIdentificationType",
     "Options" => "passportNumber|{$_LANG['openprovider']['additionalFields']['es']['DNI']},companyRegistrationNumber|{$_LANG['openprovider.additionalFields.es.CIF']}",
     "Type" => "dropdown",
-    "op_dropdown_for_op_name" => "esIdentificationNumber"
+    "op_dropdown_for_op_name" => "identificationNumber"
 );
 
 $additionaldomainfields['.es'][] = array(
@@ -361,7 +361,7 @@ $additionaldomainfields['.es'][] = array(
     "Size" => "30",
     "Required" => true,
     "op_location" => "customerAdditionalData",
-    "op_name"  => "esIdentificationNumber" // Real name is defined by the op_dropdown_for_op_name.
+    "op_name"  => "identificationNumber" // Real name is defined by the op_dropdown_for_op_name.
 );
 
 // All .ES SLDs
