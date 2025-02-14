@@ -50,7 +50,7 @@ class ClientAreaFooterController
 
                 $passport = $typePassport ? '<option selected value="passportNumber">' . $_LANG['openprovider']['additionalFields']['.es']['identificationPassport'] . '</option>' : '<option value="passportNumber">Individual ID</option>';
                 $company = $typeCompanyRegistrationNumber ? '<option selected value="companyRegistrationNumber">' . $_LANG['openprovider']['additionalFields']['.es']['identificationCompany'] . '</option>' : '<option value="companyRegistrationNumber">Company Registration ID</option>';
-                $vat = $typeVat ? '<option selected value="vat">' . $_LANG['openprovider']['additionalFields']['.pt']['IdentificationVat'] . '</option>' : '<option value="vat">NIPC (empresa)</option>';
+                $vat = $typeVat ? '<option selected value="vat">' . $_LANG['openprovider']['additionalFields']['.pt']['ídentificationVat'] . '</option>' : '<option value="vat">NIPC (empresa)</option>';
                 $socialSecurityNumber = $typeSocialSecurityNumber ? '<option selected value="socialSecurityNumber">' . $_LANG['openprovider']['additionalFields']['.es']['identificationSocialSecurityNumber'] . '</option>' : '<option value="socialSecurityNumber">NIF (particular)</option>';
 
 
