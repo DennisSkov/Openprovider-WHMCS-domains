@@ -24,16 +24,31 @@ $_LANG['dnssec']['tablebuttonactionsave']   = 'Save';
 
 $_LANG['dnssec']['buttonadddnssecrecord'] = 'Add A New DNSSEC Record';
 
-$_LANG['openprovider']['additionalFields']['es']['IdentificationType'] = 'Identification Type';
-$_LANG['openprovider']['additionalFields']['es']['IdentificationNumber'] = "Company or Individual ID";
-$_LANG['openprovider']['additionalFields']['es']['IdentificationPassport'] = "Passport/Individual ID";
-$_LANG['openprovider']['additionalFields']['es']['IdentificationCompany'] = "Company Registration ID";
-$_LANG['openprovider']['additionalFields']['es']['IdentificationCORI'] = "Company or Individual ID";
+// Custom Domain Fields
+
+//.es
+$_LANG['openprovider']['additionalFields']['es']['identificationType'] = 'Identification Type';
+$_LANG['openprovider']['additionalFields']['es']['identificationNumber'] = "Company or Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['identificationPassport'] = "Passport/Individual ID";
+$_LANG['openprovider']['additionalFields']['es']['identificationCompany'] = "Company Registration ID";
+$_LANG['openprovider']['additionalFields']['es']['identificationCORI'] = "Company or Individual ID";
 $_LANG['openprovider']['additionalFields']['es']['DNI'] = 'DNI (If you are an individual)';
 $_LANG['openprovider']['additionalFields']['es']['CIF'] = 'CIF (If you are a company)';
 
-$_LANG['ptIdentificationType'] = 'Tipo de Contribuinte (VAT/TAX ID)';
-$_LANG['ptIdentificationNumber'] = 'Tipo de Contribuinte (VAT/TAX ID)';
-$_LANG['ptIdentificationVat'] = "NIPC (empresa)";
-$_LANG['ptIdentificationSocialSecurityNumber'] = "NIF (particular)";
-$_LANG['ptIdentificationCORI'] = 'Tipo de Contribuinte (VAT/TAX ID)';
+//.jobs
+$_LANG['openprovider']['additionalFields']['.jobs']['none'] = 'None';
+
+//.pt
+$_LANG['openprovider']['additionalFields']['.pt']['identificationType'] = 'Taxpayer type (VAT/TAX ID)';
+$_LANG['openprovider']['additionalFields']['.pt']['identificationNumber'] = 'Taxpayer type (VAT/TAX ID)';
+$_LANG['openprovider']['additionalFields']['.pt']['identificationVat'] = 'NIPC (company)';
+$_LANG['openprovider']['additionalFields']['.pt']['identificationSocialSecurityNumber'] = "NIF (Individual)";
+$_LANG['openprovider']['additionalFields']['.pt']['identificationCORI'] = 'Taxpayer type (VAT/TAX ID)';
+
+//.us
+$_LANG['openprovider']['additionalFields']['.us']['businessForProfit'] = 'P1 - Business use for profit';
+$_LANG['openprovider']['additionalFields']['.us']['nonProfitBusiness'] = 'P2 - Non-profit business (club;  association; religious organization)';
+$_LANG['openprovider']['additionalFields']['.us']['personal'] = 'P3 - Personal';
+$_LANG['openprovider']['additionalFields']['.us']['government'] = 'P5 - Government purposes';
+
+
